@@ -1,0 +1,16 @@
+
+
+<%= form_with :model => @posts do |form| %>
+  <p>
+    # <%= form.label "title", "What's this place?" %>
+    <%= form.text_field "location" %>
+  </p>
+  <p>
+    <%= form.label "What do we do here?" %>
+    <%= form.text_field "description" %>
+    <%= form.label "Date of our visit" %>
+    <%= form.date_field "posted_on" %>
+    <%= form.hidden_field "place_id" %>
+  </p>
+  <%= form.submit %>
+<% end %>
