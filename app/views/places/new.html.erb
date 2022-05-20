@@ -1,0 +1,11 @@
+<h1>So what's this place, then?</h1>
+
+<%= form_with :model => @places do |form| %>
+  <p>
+    <%= form.label "title", "What's this place?" %>
+    <%= form.text_field "name" %>
+  </p>
+
+<%= form.submit %>
+
+<% end %>
