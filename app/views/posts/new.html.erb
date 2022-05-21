@@ -1,24 +1,32 @@
-
+<h1> New Post </h1>
 
 <%= form_with :model => @posts do |form| %>
 
   <p>
     
-    
+    <p>
     <%= form.label "What did we do here?" %>
     <%= form.text_field "title" %>
+    </p>
     
-    <br>
-    
+    <p>
+
     <%= form.label "Date of our visit" %>
     <%= form.date_field "posted_on" %>
     
-    <br>
+    </p>
+
+    <p>
     <%= form.label "Let's talk details!" %>
     <%= form.text_area "description" %>
+    </p>
     
+    <p>
     <%= form.hidden_field "place_id" %>
+    </p>
     
   </p>
+
   <%= form.submit %>
+
 <% end %>
