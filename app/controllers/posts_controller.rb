@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
     def new
         @posts = Post.new
+        @posts["place_id"] = params["place_id"]
     end
 
 
